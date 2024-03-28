@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #333;
+  color: #fff;
+  width: 80%;
+  margin: auto;
+  font-family: system-ui;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.head {
+  text-align: center;
+  margin: 20px 0;
+  padding: 10px;
+}
+input {
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #000;
+  transition: 0.3s;
+  color: #fff;
+}
+input:focus {
+  transform: scale(1.1);
+}
+.totals {
+  width: 100%;
+}
+.totals input {
+  width: 20%;
+}
+@media (max-width: 1000px) {
+  .totals input {
+    width: 17%;
+    margin: 20px 0;
+  }
+  .totals #total {
+    margin-bottom: 20px;
+  }
+}
+.totals #total {
+  background-color: #ff204e;
+  padding: 10px;
+  border-radius: 5px;
+}
+.totals #total::before {
+  content: "Total: ";
+}
+button {
+  width: 100%;
+  margin: 10px 0;
+  background-color: #310044;
+  padding: 15px;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #51025f;
+}
+table {
+  width: 100%;
+  text-align: center;
+  margin: 30px 0;
+}
+table thead {
+  padding: 10px 15px;
+  text-align: center;
+}
+.btns {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.btns button {
+  width: 48%;
+}
+
+.deletAll {
+  margin: 20px 0;
+}
